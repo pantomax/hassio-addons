@@ -1,20 +1,8 @@
-# Simple python executor
-[![Build Status](https://travis-ci.org/bestlibre/hassio-addons.svg?branch=master)](https://travis-ci.org/bestlibre/hassio-addons)[![](https://images.microbadger.com/badges/version/bestlibre/armhf-python-exec.svg)](https://microbadger.com/images/bestlibre/armhf-python-exec "Get your own version badge on microbadger.com")
+# Broadlink S1C Addon
 
-This addon is mainly for devlopment purpose. It will install, if needed, the given requirements with pip and then launch the python script.
+This addon is for the Broadlink S1C Alarm System
 
-Since json config string cannot hold python code (with multilines and indents) the script code source must be present in a file accessible from the addon. It can be put in /share.
-
-## Options
-
-### clean (bool)
-If set to `true` the virtualenv holding the requirements is deleted on start.
-
-### requirements (list of string)
-List of requirements to install with pip
-
-### code (string)
-Path to the python source file.
-
-### python2 (bool)
-Use python2 instead of python3 
+Install the addon
+copy "broadlink.py" and "s1c.py" in the "share" share of your hass.io
+edit "s1c.py" adding your mosquitto address, port, user and  password. Then add your S1C IP Address and Mac Address.
+Start the addon and eventually reboot the hass.io if the addon starts giving you strange readings.
