@@ -8,4 +8,4 @@ This addon is for the Broadlink S1C Alarm System
 
 3. Edit "s1c.py" adding your mosquitto address, port, user and  password. Then add your S1C IP Address and Mac Address.
 
-4. Start the addon (it takes also 10 minutes to start, don't worry) and eventually reboot the hass.io if the addon starts giving you strange readings.
+4. Start the addon (it takes also 10 minutes to start, don't worry) and eventually reboot the raspberry pi (hassio host reboot) if the addon starts giving you strange readings.
