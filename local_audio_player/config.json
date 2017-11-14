@@ -1,0 +1,13 @@
+{
+  "name": "Audio Player",
+  "version": "1.5",
+  "slug": "audio_player",
+  "description": "Play audio files",
+  "startup": "application",
+  "boot": "auto",
+  "stdin": true,
+  "audio": true,
+  "options": {},
+  "schema": {},
+  "host_network": true
+}
