@@ -10,7 +10,7 @@ This addon is made to make the rpi-rf receiver script run in background of you h
 
 4. Start the addon 
 
-5. Add this sensor to receive the codes in your hassio:
+5. Add this sensor to read the codes in your hassio:
 
 sensor:
   - platform: mqtt
