@@ -1,13 +1,17 @@
 {
     "name": "Broadlink S1c",
-    "version": "1.5",
+    "version": "1.51",
     "slug": "s1c",
     "description": "Broadlink S1C",
     "startup": "application",
     "boot": "auto",
     "ports": {"5055/tcp": null},
-    "options": {"code": null,
-	        "requirements": []},
+    "options": {
+  "code": "/share/s1c.py",
+  "requirements": [
+    "broadlink"
+  ]
+},
     "schema": {"code": "str",
 	       "requirements": ["str"],
 	       "clean": "bool?"},
