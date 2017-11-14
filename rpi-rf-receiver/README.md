@@ -14,5 +14,7 @@ This addon is made to make the rpi-rf receiver script run in background of you h
 
 sensor:
   - platform: mqtt
+  
     state_topic: "sensors/rf/receiver"
+    
     name: "RF Receiver"
