@@ -10,7 +10,7 @@ import io, os, datetime, shutil
 mosquitto_address = "192.168.1.100"
 mosquitto_port = "1883"
 mosquitto_user = "homeassistant"
-mosquitto_password = "kiolki"
+mosquitto_password = "REDACTED" 
 
 from rpi_rf import RFDevice
 
