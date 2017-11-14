@@ -1,5 +1,4 @@
 # hassio-addons
-[![Build Status](https://travis-ci.org/bestlibre/hassio-addons.svg?branch=master)](https://travis-ci.org/bestlibre/hassio-addons)
 
 Repository for hass.io addons.
 
