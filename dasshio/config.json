@@ -1,0 +1,32 @@
+{
+  "name": "Dasshio",
+  "version": "0.0.9",
+  "slug": "dasshio",
+  "description": "Use Amazon Dash Buttons in Home Assistant",
+  "url": "https://github.com/danimtb/dasshio",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": "True",
+  "options": {
+    "buttons": [
+      {
+        "name": "null",
+        "address": "null",
+        "url": "null",
+        "headers": "{}",
+        "body": "{}"
+      }
+    ]
+  },
+  "schema": {
+    "buttons": [
+      {
+        "name": "str",
+        "address": "str",
+        "url": "str",
+        "headers": "str",
+        "body": "str"
+      }
+    ]
+  }
+}
