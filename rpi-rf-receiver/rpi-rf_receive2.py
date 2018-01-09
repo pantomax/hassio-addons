@@ -49,13 +49,13 @@ while True:
     if rfdevice.rx_code_timestamp != timestamp:
         timestamp = rfdevice.rx_code_timestamp
         logging.info(str(rfdevice.rx_code) +
-                     " [pulselength " + str(rfdevice.rx_pulselength) +
+                     " [GPIO 27, pulselength " + str(rfdevice.rx_pulselength) +
                      ", protocol " + str(rfdevice.rx_proto) + "]")
         os.system("mosquitto_pub -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice.rx_code))
     if rfdevice2.rx_code_timestamp != timestamp2:
         timestamp2 = rfdevice2.rx_code_timestamp
         logging.info(str(rfdevice2.rx_code) +
-                     " [pulselength " + str(rfdevice2.rx_pulselength) +
+                     " [GPIO 22, pulselength " + str(rfdevice2.rx_pulselength) +
                      ", protocol " + str(rfdevice2.rx_proto) + "]")
         os.system("mosquitto_pub -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver2' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice2.rx_code))
     time.sleep(0.01)
