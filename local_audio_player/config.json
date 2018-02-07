@@ -8,8 +8,6 @@
   "stdin": true,
   "audio": true,
   "options": {},
-  "schema": {"code": "str",
-    "requirements": ["str"],
-    "clean": "bool?"},
+  "schema": {},
   "host_network": true
 }
