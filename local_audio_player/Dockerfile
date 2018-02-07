@@ -2,7 +2,9 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Add env
-ENV LANG C.UTF-8
+ENV LAN# Setup
+RUN apk add --no-cache python3 python3-dev gcc linux-headers musl-dev tcpdump \
+    && pip3 install --no-cache --upgrade pipG C.UTF-8
 
 # Setup base, install sox package
 RUN apk add --no-cache jq sox
