@@ -10,6 +10,6 @@ while read -r input; do
     echo "[Info] Read alias: $input"
 
     if ! msg="$(play $input)"; then
-    	echo "[Error] Playing failed -> $msg"
+    	echo "[Error] Playing failed  -> $msg"
     fi
 done
