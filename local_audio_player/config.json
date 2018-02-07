@@ -3,11 +3,12 @@
   "version": "1.5",
   "slug": "audio_player",
   "description": "Play audio files",
-  "startup": "application",
+  "startup": "services",
   "boot": "auto",
   "stdin": true,
   "audio": true,
   "options": {},
   "schema": {},
+  "hassio api": "hassio", 
   "host_network": true
 }
