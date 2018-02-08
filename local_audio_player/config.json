@@ -1,6 +1,6 @@
 {
   "name": "Audio Player",
-  "version": "1.52",
+  "version": "1.55",
   "slug": "audio_player",
   "description": "Play audio files",
   "startup": "before",
