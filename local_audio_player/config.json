@@ -3,7 +3,7 @@
   "version": "1.5",
   "slug": "audio_player",
   "description": "Play audio files",
-  "startup": "services",
+  "startup": "application",
   "boot": "auto",
   "stdin": true,
   "audio": true,
