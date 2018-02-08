@@ -9,7 +9,7 @@
   "audio": true,
   "options": {},
   "schema": {},
-  "hassio api": "hassio",
-  "homeassistant api": "http://hassio/homeassistant/api", 
+  "hassio_api": "hassio",
+  "homeassistant_api": "true", 
   "host_network": true
 }
