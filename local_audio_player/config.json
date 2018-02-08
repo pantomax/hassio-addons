@@ -7,9 +7,9 @@
   "boot": "auto",
   "stdin": true,
   "audio": true,
+  "hassio_api": true,
+  "homeassistant_api": true,   
   "options": {},
   "schema": {},
-  "hassio_api": "true",
-  "homeassistant_api": "true", 
   "host_network": true
 }
