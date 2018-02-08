@@ -8,7 +8,6 @@
   "stdin": true,
   "audio": true,
   "hassio_api": true,
-  "homeassistant_api": true,   
   "options": {},
   "schema": {},
   "host_network": true
