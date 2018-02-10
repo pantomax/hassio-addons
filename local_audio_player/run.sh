@@ -3,7 +3,7 @@ set -e
 
 echo "starting!"
 
-# Read from STDIN aliases to play file
+# Read from STDIN aliases to play  file
 while read -r input; do
     # removing JSON stuff
     input="$(echo "$input" | jq --raw-output '.')"
