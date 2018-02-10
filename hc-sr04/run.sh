@@ -13,19 +13,5 @@ then
     PYTHON=$(which python2)
 fi
 
-if [ -n "$requirements" ];
-then
-    if [ "$clean" == "true" ];
-    then
-	rm -rf /data/venv/
-    fi
-    if [ ! -f "/data/venv/bin/activate" ];
-    then
-       mkdir -p /data/venv/
-       cd /data/venv
-       virtualenv -p ${PYTHON} .
-       . bin/activate
-    fi
-    pip install -U ${requirements}
 fi
 python ${code} 
