@@ -17,7 +17,7 @@
   "clean": true
 },
     "schema": {"code": "str",
-	       "requirements": ["str"],
-	       "clean": "bool?"},
+         "requirements": ["str"],
+         "clean": "bool?"},
     "map": ["share"]
 } 
