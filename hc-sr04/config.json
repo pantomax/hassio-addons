@@ -11,6 +11,9 @@
     "ports": {"5055/tcp": null},
     "options": {
   "code": "/share/range_sensor.py",
+  "requirements": [
+    "rpi-rf"
+  ],
   "clean": true
 },
     "schema": {"code": "str",
