@@ -1,6 +1,6 @@
 {
     "name": "Ultrasonic Sensor Interface",
-    "version": "1.1",
+    "version": "1.2",
     "slug": "ultrasonic_receiver",
     "description": "Ultrasonic Sensor Interface Script",
     "startup": "application",
@@ -10,7 +10,8 @@
     "gpio": "true",
     "ports": {"5055/tcp": null},
     "options": {
-  "code": "/share/range_sensor.py"
+  "code": "/share/range_sensor.py",
+  "clean": true
 },
     "schema": {"code": "str"},
     "map": ["share"]
