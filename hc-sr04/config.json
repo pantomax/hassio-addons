@@ -10,11 +10,8 @@
     "gpio": "true",
     "ports": {"5055/tcp": null},
     "options": {
-  "code": "/share/range_sensor.py",
-  "clean": true
+  "code": "/share/range_sensor.py"
 },
-    "schema": {"code": "str",
-         "requirements": ["str"],
-         "clean": "bool?"},
+    "schema": {"code": "str"},
     "map": ["share"]
 } 
