@@ -1,6 +1,6 @@
 {
     "name": "Ultrasonic Sensor Interface",
-    "version": "1.0",
+    "version": "1.1",
     "slug": "ultrasonic_receiver",
     "description": "Ultrasonic Sensor Interface Script",
     "startup": "application",
