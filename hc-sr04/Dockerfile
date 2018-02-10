@@ -18,6 +18,7 @@ RUN apk add --no-cache mosquitto
 RUN apk add --no-cache mosquitto-dev
 RUN apk add --no-cache mosquitto-clients
 RUN apk add --no-cache mosquitto-libs
+RUN apk add --no-cache RPi.GPIO
 RUN pip install pyaes
 RUN pip install pycrypto
 RUN apk add --no-cache \

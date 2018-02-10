@@ -1,8 +1,8 @@
 {
-    "name": "Ultrasonic Sensor Interface",
-    "version": "1.2",
-    "slug": "ultrasonic_receiver",
-    "description": "Ultrasonic Sensor Interface Script",
+    "name": "Ultrasound Receiver",
+    "version": "1.0",
+    "slug": "ultrasound_receiver",
+    "description": "Ultrasound Receiver",
     "startup": "application",
     "boot": "auto",
     "devices": ["/dev/mem:/dev/mem:rw"],
@@ -11,8 +11,13 @@
     "ports": {"5055/tcp": null},
     "options": {
   "code": "/share/range_sensor.py",
+  "requirements": [
+    "RPi.GPIO"
+  ],
   "clean": true
 },
-    "schema": {"code": "str"},
+    "schema": {"code": "str",
+	       "requirements": ["str"],
+	       "clean": "bool?"},
     "map": ["share"]
 } 
