@@ -1,0 +1,23 @@
+{
+    "name": "RPi RF Receiver test",
+    "version": "1.0",
+    "slug": "rfreceiver",
+    "description": "RPi RF Receiver Script test",
+    "startup": "application",
+    "boot": "auto",
+    "devices": ["/dev/mem:/dev/mem:rw"],
+    "privileged": ["SYS_RAWIO"],
+    "gpio": "true",
+    "ports": {"5055/tcp": null},
+    "options": {
+  "code": "/share/rpi-rf_receive.py",
+  "requirements": [
+    "rpi-rf"
+  ],
+  "clean": true
+},
+    "schema": {"code": "str",
+	       "requirements": ["str"],
+	       "clean": "bool?"},
+    "map": ["share"]
+} 
