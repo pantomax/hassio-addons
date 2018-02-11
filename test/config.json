@@ -1,8 +1,8 @@
 {
-    "name": "RPi RF Receiver test",
+    "name": "test",
     "version": "1.0",
-    "slug": "rfreceiver",
-    "description": "RPi RF Receiver Script test",
+    "slug": "test",
+    "description": "test",
     "startup": "application",
     "boot": "auto",
     "devices": ["/dev/mem:/dev/mem:rw"],
