@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 # Setup base, install sox package
-RUN apk add --no-cache jq vlc-nox
+RUN apk add --no-cache mozilla-plugin-vlc vlc-nox
 
 # Copy data
 COPY run.sh /

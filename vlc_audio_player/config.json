@@ -1,6 +1,6 @@
 {
   "name": "VLC Audio Player",
-  "version": "1.0",
+  "version": "1.01",
   "slug": "vlc_audio_player",
   "description": "Play audio files with VLC Player",
   "startup": "before",
