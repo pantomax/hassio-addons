@@ -1,0 +1,14 @@
+{
+  "name": "VLC Audio Player",
+  "version": "1.0",
+  "slug": "vlc_audio_player",
+  "description": "Play audio files with VLC Player",
+  "startup": "before",
+  "boot": "auto",
+  "stdin": true,
+  "audio": true,
+  "hassio_api": true,
+  "options": {},
+  "schema": {},
+  "host_network": true
+}
