@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+CONFIG_PATH=/data/options.json
 requirements=$(cat /data/options.json | jq -r 'if .requirements then .requirements | join(" ") else "" end')
 code=$(cat /data/options.json | jq -r '.code')
 clean=$(cat /data/options.json | jq -r '.clean //empty')
@@ -29,4 +30,3 @@ then
     pip install -U ${requirements}
 fi
 python ${code}
-

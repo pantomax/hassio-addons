@@ -3,34 +3,39 @@ FROM $BUILD_FROM
 
 # Add env
 ENV LANG C.UTF-8
-RUN apk add --no-cache jq
-RUN apk add --no-cache py2-pip
-RUN apk add --no-cache clang
-RUN apk add --no-cache libgcc
-RUN apk add --no-cache gcc-gnat
-RUN apk add --no-cache libgc++
-RUN apk add --no-cache g++
-RUN apk add --no-cache make
-RUN apk add --no-cache libffi-dev
-RUN apk add --no-cache openssl-dev
-RUN apk add --no-cache python2-dev
-RUN apk add --no-cache mosquitto
-RUN apk add --no-cache mosquitto-dev
-RUN apk add --no-cache mosquitto-clients
-RUN apk add --no-cache mosquitto-libs
+RUN apk add --no-cache \
+        jq \
+        py2-pip \
+        clang \
+        libgcc \
+        gcc-gnat \
+        libgc++ \
+        g++ \
+        make \
+        libffi-dev \
+        openssl-dev \
+        python2-dev \
+        mosquitto \
+        mosquitto-dev \
+        mosquitto-libs \
+        mosquitto-clients
+
 RUN pip install pyaes
 RUN pip install broadlink
 RUN pip install pycrypto
+
 RUN apk add --no-cache \
-    	jq \
+        jq \
         py-pip \
-	python \
-	python-dev \
-	python3 \
-	python3-dev\
- && pip install -U pip \
- && pip3 install -U pip \
- && pip install -U virtualenv
+        python \
+        python-dev \
+        python3 \
+        mosquitto \
+        mosquitto-clients \
+        python3-dev \
+&& pip install -U pip \
+&& pip3 install -U pip \
+&& pip install -U virtualenv
 
 # Copy data for add-on
 COPY run.sh /

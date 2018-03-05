@@ -1,6 +1,6 @@
 {
     "name": "Broadlink S1c",
-    "version": "1.51",
+    "version": "1.52",
     "slug": "s1c",
     "description": "Broadlink S1C",
     "startup": "application",
