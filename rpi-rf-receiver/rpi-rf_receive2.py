@@ -57,7 +57,7 @@ while True:
         logging.info(str(rfdevice2.rx_code) +
                      " [GPIO 22, pulselength " + str(rfdevice2.rx_pulselength) +
                      ", protocol " + str(rfdevice2.rx_proto) + "]")
-        os.system("mosquitto_pub -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver2' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice2.rx_code))
+        os.system("mosquitto_pub -V mqttv311 -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver2' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice2.rx_code))
     time.sleep(0.01)
 rfdevice.cleanup()
 rfdevice2.cleanup()

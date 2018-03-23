@@ -40,7 +40,7 @@ while True:
         logging.info(str(rfdevice.rx_code) +
                      " [pulselength " + str(rfdevice.rx_pulselength) +
                      ", protocol " + str(rfdevice.rx_proto) + "]")
-        os.system("mosquitto_pub -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice.rx_code))
+        os.system("mosquitto_pub -V mqttv311 -h " + mosquitto_address + " -p " + mosquitto_port + " -t 'sensors/rf/receiver' -u " + mosquitto_user + " -P " + mosquitto_password + " -m " + str(rfdevice.rx_code))
     time.sleep(0.01)
 rfdevice.cleanup() 
 
