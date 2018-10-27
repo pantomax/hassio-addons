@@ -1,5 +1,7 @@
 # RPI RF Receiver
 
+Fixed: disable apparmor to allow GPIO
+
 This addon is made to make the rpi-rf receiver script run in background of you hassio
 
 1. Install the addon (it take 5-10 minutes to intall).
