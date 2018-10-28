@@ -20,3 +20,8 @@ sensor:
     state_topic: "sensors/rf/receiver"
     
     name: "RF Receiver"
+    
+    
+Updates/Fixes:
+  -  "apparmor": "false" - HASSIO rpi-rf failing to initialize rx due to recent addition of apparmor
+  -  pointing MQTT at "addon_core_mosquitto" instead of static IP. More robust as long as you are using HASSIO's official Mosquitto Addon
