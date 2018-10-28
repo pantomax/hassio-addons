@@ -19,7 +19,7 @@ PreRequisite:
 
 ```yaml
 mqtt:
-  broker: core_mosquitto
+  broker: core-mosquitto
   discovery: true
   
 binary_sensor:
@@ -33,4 +33,4 @@ binary_sensor:
 
 # Updates/Fixes:
   -  "apparmor": "false" - HASSIO rpi-rf failing to initialize rx due to recent addition of apparmor (fryguy04)
-  -  pointing MQTT at "core_mosquitto" instead of static IP. More robust as long as you are using HASSIO's official Mosquitto Addon (fryguy04)
+  -  pointing MQTT at "core-mosquitto" instead of static IP. More robust as long as you are using HASSIO's official Mosquitto Addon (fryguy04)
