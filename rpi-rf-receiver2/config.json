@@ -1,9 +1,15 @@
 {
     "name": "RPi RF Receiver",
-    "version": "1.63",
+    "version": "2.01",
     "slug": "rfreceiver",
     "description": "RPi RF Receiver Script",
     "startup": "application",
+    "arch": [
+      "aarch64",
+      "amd64",
+      "armhf",
+      "i386"
+    ],
     "boot": "auto",
     "devices": ["/dev/mem:/dev/mem:rw"],
     "privileged": ["SYS_RAWIO"],
