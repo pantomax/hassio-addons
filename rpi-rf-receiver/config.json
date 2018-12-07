@@ -1,6 +1,6 @@
 {
   "name": "RPi RF Receiver",
-  "version": "2",
+  "version": "2.01",
   "slug": "rfreceiver",
   "description": "RPi RF Receiver Script",
   "startup": "application",
