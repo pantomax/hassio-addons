@@ -1,24 +1,24 @@
 {
-    "name": "RPi RF Receiver",
-    "version": "1.6",
-    "slug": "rfreceiver",
-    "description": "RPi RF Receiver Script",
-    "startup": "application",
-    "boot": "auto",
-    "devices": ["/dev/mem:/dev/mem:rw"],
-    "privileged": ["SYS_RAWIO"],
-    "gpio": "true",
-    "apparmor": "false",
-    "ports": {"5055/tcp": null},
-    "options": {
-  "code": "/share/rpi-rf_receive.py",
-  "requirements": [
-    "rpi-rf"
-  ],
-  "clean": true
+  "name": "RPi RF Receiver",
+  "version": "2",
+  "slug": "rfreceiver",
+  "description": "RPi RF Receiver Script",
+  "startup": "application",
+  "boot": "auto",
+  "devices": ["/dev/mem:/dev/mem:rw"],
+  "privileged": ["SYS_RAWIO"],
+  "gpio": "true",
+  "apparmor": "false",
+  "ports": {"5055/tcp": null},
+  "options": {
+"code": "/share/rpi-rf_receive.py",
+"requirements": [
+  "rpi-rf"
+],
+"clean": true
 },
-    "schema": {"code": "str",
-	       "requirements": ["str"],
-	       "clean": "bool?"},
-    "map": ["share"]
+  "schema": {"code": "str",
+       "requirements": ["str"],
+       "clean": "bool?"},
+  "map": ["share"]
 } 
