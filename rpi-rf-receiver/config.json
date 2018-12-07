@@ -1,6 +1,6 @@
 {
     "name": "RPi RF Receiver",
-    "version": "1.5",
+    "version": "1.6",
     "slug": "rfreceiver",
     "description": "RPi RF Receiver Script",
     "startup": "application",
@@ -8,6 +8,7 @@
     "devices": ["/dev/mem:/dev/mem:rw"],
     "privileged": ["SYS_RAWIO"],
     "gpio": "true",
+    "apparmor": "false",
     "ports": {"5055/tcp": null},
     "options": {
   "code": "/share/rpi-rf_receive.py",
