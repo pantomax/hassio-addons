@@ -1,7 +1,7 @@
 {
-    "name": "RPi RF Receiver 2",
+    "name": "RPi RF Receiver 3",
     "version": "2.02",
-    "slug": "rfreceiver2",
+    "slug": "rfreceiver3",
     "description": "RPi RF Receiver 2 Script",
     "startup": "application",
     "arch": [

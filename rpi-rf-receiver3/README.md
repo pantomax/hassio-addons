@@ -1,4 +1,4 @@
-# RPI RF Receiver 2
+# RPI RF Receiver 3
 
 This addon is made to make the rpi-rf receiver script run in background of you hassio
 
