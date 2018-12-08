@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-# Add env
+# Add env 
 ENV LANG C.UTF-8
 RUN apk add --no-cache \
         jq \
