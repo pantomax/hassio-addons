@@ -1,20 +1,36 @@
 # RPI RF Receiver
 
-This addon is made to make the rpi-rf receiver script run in background of you hassio
+Since HASSIO removes raw access to RaspberryPi GPIO pins, This addon allows rpi-rf receiver script run in background of you hassio and sends all received RF codes back to HASSIO via MQTT. This enables you to create Switches, Trigger actions, etc from RF Codes received.
 
-1. Install the addon (it take 5-10 minutes to intall).
+PreRequisite: 
+1. Install a MQTT server. If running Hassio, highly suggest: https://www.home-assistant.io/addons/mosquitto/
+2. Under Hass.io -> "Add-on Store" -> "Add new repository by url" copy/paste: https://github.com/pantomax/hassio-addons
 
-2. Copy "rpi-rf_receive.py" in the "share" share of your hass.io.
+1. Install this addon (it take 5-10 minutes to intall).
 
-3. Edit "rpi-rf_receive.py" adding your mosquitto address, port, user and  password. 
+2. Copy "rpi-rf_receive.py" to  "/share/rpi-rf_receive.py" share of your hass.io.
 
-4. Start the addon 
+3. (optional) Edit "rpi-rf_receive.py" only if you need to change mosquitto address, port, user or password. By default will work without edits if you simply installed official HASSIO Mosquitto Addon with no user/pass/config changes.
 
-5. Add this sensor to read the codes in your hassio:
+4. Start the addon (good idea to view Logs via bottom of addon page for errors)
 
-sensor:
-  - platform: mqtt
+5. Add this (or similar) code to your hassio configuration.yaml file
+
+
+```yaml
+mqtt:
+  broker: core-mosquitto
+  discovery: true
   
-    state_topic: "sensors/rf/receiver"
-    
-    name: "RF Receiver"
+binary_sensor:
+  - platform: mqtt
+    state_topic: sensors/rf/receiver
+    name: rf1
+    payload_on: 4478259
+    payload_off: 4478268
+```
+
+
+# Updates/Fixes:
+  -  "apparmor": "false" - HASSIO rpi-rf failing to initialize rx due to recent addition of apparmor (fryguy04)
+  -  pointing MQTT at "core-mosquitto" instead of static IP. More robust as long as you are using HASSIO's official Mosquitto Addon (fryguy04)
